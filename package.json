@@ -1,0 +1,35 @@
+{
+  "name": "nat64-latency-test",
+  "version": "1.0.0",
+  "description": "NAT64 网络延迟测试工具 - 支持 Cloudflare Worker 和 Pages 部署",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "pages:dev": "wrangler pages dev public",
+    "pages:deploy": "wrangler pages deploy public",
+    "build": "node scripts/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nat64",
+    "latency",
+    "network",
+    "test",
+    "cloudflare",
+    "worker",
+    "pages"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/nat64-latency-test.git"
+  }
+}

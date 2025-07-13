@@ -1,0 +1,27 @@
+# Cloudflare Worker 配置
+name = "nat64-latency-test"
+main = "src/index.js"
+compatibility_date = "2024-07-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 环境变量（如果需要）
+[vars]
+# ENVIRONMENT = "production"
+
+# KV 命名空间（如果需要缓存）
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "your-kv-namespace-id"
+
+# 路由配置（可选）
+# routes = [
+#   { pattern = "nat64-test.example.com/*", zone_name = "example.com" }
+# ]
+
+# 开发环境配置
+[env.development]
+name = "nat64-latency-test-dev"
+
+# 生产环境配置
+[env.production]
+name = "nat64-latency-test-prod"
